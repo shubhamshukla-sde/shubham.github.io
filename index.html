@@ -52,7 +52,13 @@
         header {
             display: flex;
             align-items: center;
-            padding: 20px 0;
+            padding: 20px;
+            width: 100%;
+            background-color: var(--background-color);
+            position: sticky; /* Keeps the header visible while scrolling */
+            top: 0; /* Sticks the header to the top */
+            z-index: 1000; /* Ensures the header stays above other elements */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow for visual separation */
         }
 
         nav {
@@ -66,9 +72,10 @@
 
         nav ul {
             display: flex;
-            gap: 40px;
+            gap: 20px;
             list-style: none;
-            margin: 0;
+            margin: 5px;
+            padding: 5px;
         }
 
         nav ul li a:link,
@@ -149,6 +156,98 @@
             align-items: center;
         }
 
+        #experience {
+        padding: 40px 0;  
+        }
+
+        #experience {
+        padding: 40px 0;
+        color: var(--accent-color)
+        }
+
+        #experience h2 {
+            color: var(--accent-color)
+        }
+
+        .timeline {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+        border-left: 3px solid ; /* Adds a vertical line to indicate the timeline */
+        color: var(--accent-color);
+        padding-left: 20px;
+        }
+
+        .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+        }
+
+        .timeline-date {
+        position: relative;
+        left: -20px; /* Ensure time always appears on the left */
+        top: 20px;
+        background-color: #ff8c00;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 50%;
+        width: 80px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        text-align: center;
+        }
+
+        .timeline-date:hover {
+        animation: fadeInUp 0.10s ease-out; /* Apply fadeInUp animation on hover */
+        }
+
+        .timeline-content {
+        margin-left: 100px;
+        }
+
+        .timeline-content h3 {
+        margin-top: 0;
+        color: white; /* Ensures experience titles are white */
+        font-size: 20px;
+        }
+
+        .timeline-content ul {
+        list-style: none;
+        padding-left: 0;
+        }
+
+        .timeline-content ul li {
+        font-size: 14px;
+        line-height: 1.6;
+        color: white; /* Ensures list items are white */
+        }
+
+        .timeline-item:nth-child(even) .timeline-date {
+        left: -20px; /* Keep the date on the left for even items */
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+        margin-right: 20px;
+        }
+
+
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
         @keyframes typing {
             from {
                 width: 5;
@@ -184,37 +283,29 @@
         <main>
 
             <section id="about">
-                <h1 style="font-size: 2.5em; margin-bottom: 10px; white-space: nowrap; overflow: hidden; border-right: 2px solid #47ebeb; display: inline-block; animation: typing 3s steps(20, end), blink 0.5s step-end infinite;">
+                <h1 style="font-size: 2.1em; margin-bottom: 10px; white-space: nowrap; overflow: hidden; border-right: 2px solid #47ebeb; display: inline-block; animation: typing 3s steps(20, end), blink 0.5s step-end infinite;">
                     Full-Stack Developer
                 </h1>
             
                 <div style="display: flex; gap: 20px; align-items: center; margin-top: 20px;">
-                    <!-- Resume Link -->
                     <a href="https://drive.google.com/file/d/18ssXAAAsQhiVIJp1kTFkqp3AfbajaVrQ/view?usp=drive_link" target="_blank" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
                         <img src="https://img.icons8.com/?size=100&id=OExBsk632jtj&format=png&color=000000" alt="Download Resume" style="width: 24px; height: 24px;">
                         <span style="color: #47ebeb; font-size: 1.1em;">Resume</span>
                     </a>
             
-                    <!-- Leetcode Link -->
                     <a href="https://leetcode.com/shubhamshukla739860/" target="_blank" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
                         <img src="https://img.icons8.com/?size=100&id=wDGo581Ea5Nf&format=png&color=000000" alt="Leetcode" style="width: 24px; height: 24px;">
                         <span style="color: #47ebeb; font-size: 1.1em;">Leetcode</span>
                     </a>
                 </div>
+            
+                <p id="about-text" style="font-size: 1.2em; line-height: 1.6; text-align: justify; margin: 20px auto; max-height: 2.9em; overflow: hidden;">
+                    Hi, I’m Shubham Shukla, a results-driven Full-Stack Developer with over 3 years of experience in designing and developing scalable, high-performance applications. I specialize in leveraging <strong>Java</strong>, <strong>Kotlin</strong>, and <strong>JavaScript</strong> to build robust systems and intuitive user interfaces. I am proficient in frameworks such as <strong>Spring Boot</strong>, <strong>React</strong>, <strong>Vue.js</strong>, and <strong>JAX-RS</strong>, enabling me to deliver seamless backend and frontend solutions. Passionate about clean code and efficient problem-solving, I am committed to delivering innovative solutions that drive business success.
+                </p>
                 
-                <p style="font-size: 1.2em; line-height: 1.6; text-align: justify; margin: 3 auto;">
-                    Hi, I’m Shubham Shukla, a results-driven Full-Stack Developer with over 3 years of experience in designing and developing scalable, high-performance applications. 
-                    I specialize in leveraging <strong>Java</strong>, <strong>Kotlin</strong>, and <strong>JavaScript</strong> to build robust systems and intuitive user interfaces. 
-                    I am proficient in frameworks such as <strong>Spring Boot</strong>, <strong>React</strong>, <strong>Vue.js</strong>, and <strong>JAX-RS</strong>, enabling me to deliver seamless backend and frontend solutions. 
-                    Passionate about clean code and efficient problem-solving, I am committed to delivering innovative solutions that drive business success.
-                </p>
-                                
-                <p style="font-size: 1.2em; line-height: 1.6; text-align: justify; margin: 20px auto 0;">
-                    My expertise includes designing REST APIs, implementing microservices architectures, and utilizing tools such as <strong>Docker</strong>, 
-                    <strong>Apache Kafka</strong>, <strong>CI/CD pipelines</strong>, and <strong>Kibana</strong> to streamline development and deployment processes. 
-                    Skilled in low-level design, problem-solving, and data structures, I am dedicated to delivering innovative and impactful solutions 
-                    that drive business success.
-                </p>
+                <button id="read-more-btn" padding: 10px 20px; font-size: 0em; border-radius: 50px; cursor: pointer;>
+                    Read More
+                </button>
             </section>
             
 
@@ -299,18 +390,54 @@
 
             <section id="experience">
                 <h2>Experience</h2>
-                <div class="card">
-                    <h3>Java full stack develoepr</h3>
-                    <p>Capgemini | Jul 2022 - Present</p>
-                    <p>Developed scalable microservices and front-end components, achieving significant performance improvements for global clients.</p>
+                <div class="timeline">
+                  
+                  <div class="timeline-item">
+                    <div class="timeline-date">Jul 2023 - Present</div>
+                    <div class="timeline-content">
+                      <h3>Software Development Engineer (Full Stack)</h3>
+                      <p><strong>Capgemini</strong></p>
+                      <ul>
+                        <li>Developed backend microservices with Kotlin & Spring Boot for 3,000+ users.</li>
+                        <li>Improved UX with Vue.js components, reducing load times by 40%.</li>
+                        <li>Secured applications using Spring Boot Security, cutting unauthorized access by 30%.</li>
+                        <li>Automated CI/CD pipelines, increasing deployment efficiency by 40%.</li>
+                        <li>Achieved 90% test coverage with Playwright, reducing post-release defects by 20%.</li>
+                      </ul>
+                    </div>
+                  </div>
+              
+                  <div class="timeline-item">
+                    <div class="timeline-date">Jul 2022 - Jul 2023</div>
+                    <div class="timeline-content">
+                      <h3>Software Development Engineer (Backend)</h3>
+                      <p><strong>Capgemini</strong></p>
+                      <ul>
+                        <li>Built backend microservices with Java & JAX-RS for 2,000+ users.</li>
+                        <li>Enhanced app performance with caching strategies, improving speed by 25%.</li>
+                        <li>Integrated third-party APIs, boosting productivity by 86% for 5,000 users.</li>
+                        <li>Reduced defects by 25% through Test-Driven Development with JUnit & Mockito.</li>
+                      </ul>
+                    </div>
+                  </div>
+              
+                  <div class="timeline-item">
+                    <div class="timeline-date">Feb 2022 - Jul 2022</div>
+                    <div class="timeline-content">
+                      <h3>Intern | JEE with Cloud API Development</h3>
+                      <p><strong>Capgemini</strong></p>
+                      <ul>
+                        <li>Developed scalable Java & Spring Boot apps, improving deployment speed by 30%.</li>
+                        <li>Enhanced data access efficiency with Spring Boot, Hibernate, and SQL.</li>
+                        <li>Improved UI with React.js, increasing user engagement by 40%.</li>
+                      </ul>
+                    </div>
+                  </div>
+              
                 </div>
-                <div class="card">
-                    <h3>Intern</h3>
-                    <p>Capgemini | Feb 2022 - Jun 2022</p>
-                    <p>Built robust APIs and UIs using Spring Boot and React, streamlining data workflows.</p>
-                </div>
-            </section>
-
+              </section>
+              
+            
             <section id="contact">
                 <h2>Get in Touch</h2>
                 <div style="display: flex; justify-content: center; align-items: center; gap: 24px; margin-top: 16px;">
@@ -333,5 +460,20 @@
         </footer>
     </div>
 </body>
+
+<script>
+    const aboutText = document.getElementById("about-text");
+    const readMoreBtn = document.getElementById("read-more-btn");
+
+    readMoreBtn.addEventListener("click", () => {
+        if (readMoreBtn.innerText === "Read More") {
+            aboutText.style.maxHeight = "none";
+            readMoreBtn.innerText = "Read Less";
+        } else {
+            aboutText.style.maxHeight = "2.9em"; // Restrict to 3 lines
+            readMoreBtn.innerText = "Read More";
+        }
+    });
+</script>
 
 </html>
