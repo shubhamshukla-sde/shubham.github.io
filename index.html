@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Shukla - Full Stack Developer</title>
+    <style>
+        /* Inter Font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        /* VARIABLES */
+        :root {
+            --accent-color: #47ebeb;
+            --background-color: #2a2a31;
+            --text-color: #fff;
+            --text-color-muted: #b9b9b9;
+
+            /* spacing */
+            --space-xs: 4px;
+            --space-sm: 8px;
+            --space-md: 16px;
+            --space-lg: 32px;
+            --space-xl: 64px;
+            --space-xxl: 128px;
+
+            /* typography */
+            --font-size-xs: 14px;
+            --font-size-sm: 16px;
+            --font-size-md: 18px;
+            --font-size-lg: 24px;
+            --font-size-xl: 28px;
+            --font-size-xxl: 88px;
+        }
+
+        body {
+            background-color: var(--background-color);
+            font-family: Inter, Arial, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            color: var(--text-color);
+        }
+
+        #page {
+            display: flex;
+            flex-direction: column;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-top: var(--space-md);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        .logo {
+            font-size: var(--font-size-lg);
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li a:link,
+        nav ul li a:visited {
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+
+        a:link,
+        a:visited {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: var(--font-size-xxl);
+            margin-bottom: var(--space-sm);
+        }
+
+        h2 {
+            font-size: var(--font-size-xl);
+            color: var(--accent-color);
+            margin-bottom: var(--space-lg);
+            font-weight: 200;
+            margin-top: var(--space-xl);
+        }
+
+        h3 {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-sm);
+            font-weight: 400;
+        }
+
+        p {
+            font-size: var(--font-size-sm);
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--text-color-muted);
+            margin-bottom: var(--space-md);
+        }
+
+        section {
+            margin-top: var(--space-xxl);
+            margin-bottom: var(--space-xxl);
+        }
+
+        .card {
+            background: linear-gradient(90deg, #35353f 0%, #3d3b3e 50%, #3d3b3e 50%);
+            border-radius: 20px;
+            padding: var(--space-xs) var(--space-lg) var(--space-lg);
+            border: 0.5px solid #484851;
+            margin-bottom: var(--space-lg);
+        }
+
+        .card p {
+            margin: var(--space-xs) 0;
+            font-size: var(--font-size-xs);
+        }
+
+        .project img {
+            width: 100%;
+            margin-top: var(--space-md);
+            border-radius: 14px;
+        }
+
+        footer {
+            margin-top: var(--space-xl);
+            padding: 0 0 var(--space-lg);
+            color: var(--text-color-muted);
+            text-align: center;
+        }
+
+        footer .social {
+            display: flex;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-lg);
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes typing {
+            from {
+                width: 5;
+            }
+            to {
+                width: 35%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <div class="logo">
+                <a href="/">Shubham Shukla</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="about">
+                <h1 style="font-size: 2.5em; margin-bottom: 10px; white-space: nowrap; overflow: hidden; border-right: 2px solid #47ebeb; display: inline-block; animation: typing 3s steps(20, end), blink 0.5s step-end infinite;">
+                    Full-Stack Developer
+                </h1>
+            
+                <div style="display: flex; gap: 20px; align-items: center; margin-top: 20px;">
+                    <!-- Resume Link -->
+                    <a href="https://drive.google.com/file/d/18ssXAAAsQhiVIJp1kTFkqp3AfbajaVrQ/view?usp=drive_link" target="_blank" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                        <img src="https://img.icons8.com/?size=100&id=OExBsk632jtj&format=png&color=000000" alt="Download Resume" style="width: 24px; height: 24px;">
+                        <span style="color: #47ebeb; font-size: 1.1em;">Resume</span>
+                    </a>
+            
+                    <!-- Leetcode Link -->
+                    <a href="https://leetcode.com/shubhamshukla739860/" target="_blank" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
+                        <img src="https://img.icons8.com/?size=100&id=wDGo581Ea5Nf&format=png&color=000000" alt="Leetcode" style="width: 24px; height: 24px;">
+                        <span style="color: #47ebeb; font-size: 1.1em;">Leetcode</span>
+                    </a>
+                </div>
+                
+                <p style="font-size: 1.2em; line-height: 1.6; text-align: justify; margin: 3 auto;">
+                    Hi, I’m Shubham Shukla, a results-driven Full-Stack Developer with over 3 years of professional experience at Capgemini. 
+                    I specialize in designing and building scalable, high-performance applications leveraging <strong>Java</strong>, <strong>Kotlin</strong>, and 
+                    <strong>JavaScript</strong>. Proficient in frameworks like <strong>Spring Boot</strong>, <strong>React</strong>, <strong>Vue.js</strong>, and 
+                    <strong>JAX-RS</strong>, I excel at creating robust backend systems and seamless front-end interfaces.
+                </p>
+                <p style="font-size: 1.2em; line-height: 1.6; text-align: justify; margin: 20px auto 0;">
+                    My expertise includes designing REST APIs, implementing microservices architectures, and utilizing tools such as <strong>Docker</strong>, 
+                    <strong>Apache Kafka</strong>, <strong>CI/CD pipelines</strong>, and <strong>Kibana</strong> to streamline development and deployment processes. 
+                    Skilled in low-level design, problem-solving, and data structures, I am dedicated to delivering innovative and impactful solutions 
+                    that drive business success.
+                </p>
+            </section>
+            
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="card">
+                    <h3>Programming Languages</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" style="width: 20px; height: 20px;"> Java
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" style="width: 20px; height: 20px;"> JavaScript
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/ios-filled/50/47ebeb/sql.png" alt="SQL" style="width: 20px; height: 20px;"> SQL
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/color/48/000000/kotlin.png" alt="Kotlin" style="width: 20px; height: 20px;"> Kotlin
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <h3>Frameworks & Libraries</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" style="width: 20px; height: 20px;"> React
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/color/48/000000/vue-js.png" alt="Vue.js" style="width: 20px; height: 20px;"> Vue.js
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/color/48/000000/spring-logo.png" alt="Spring Boot" style="width: 20px; height: 20px;"> Spring Boot
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/ios-filled/50/47ebeb/test.png" alt="JUnit" style="width: 20px; height: 20px;"> JUnit
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/ios-filled/50/47ebeb/play.png" alt="Playwright" style="width: 20px; height: 20px;"> Playwright
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/ios-filled/50/47ebeb/checkmark.png" alt="Mockito" style="width: 20px; height: 20px;"> Mockito
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/ios-filled/50/47ebeb/grid.png" alt="AG Grid" style="width: 20px; height: 20px;"> AG Grid
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/?size=100&id=NnzHVIu1bGIV&format=png&color=000000" alt="JAX-RS" style="width: 20px; height: 20px;"> JAX-RS
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <h3>Tools & Technologies</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker" style="width: 20px; height: 20px;"> Docker
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/?size=100&id=fOhLNqGJsUbJ&format=png&color=000000" alt="Apache Kafka" style="width: 20px; height: 20px;"> Apache Kafka
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/ios-filled/50/47ebeb/code.png" alt="GitHub" style="width: 20px; height: 20px;"> GitHub
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <h3>Other Skills</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/?size=100&id=Y643hFCbn1z8&format=png&color=000000" alt="Low-Level Design" style="width: 20px; height: 20px;"> Low-Level Design
+                        </button>
+                        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: none; border-radius: 8px; background-color: #35353f; color: #fff; cursor: default;">
+                            <img src="https://img.icons8.com/?size=100&id=DgGnQkdkIcqi&format=png&color=000000" alt="DSA & Problem Solving" style="width: 20px; height: 20px;"> Problem Solving
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="card">
+                    <h3>Java full stack develoepr</h3>
+                    <p>Capgemini | Jul 2022 - Present</p>
+                    <p>Developed scalable microservices and front-end components, achieving significant performance improvements for global clients.</p>
+                </div>
+                <div class="card">
+                    <h3>Intern</h3>
+                    <p>Capgemini | Feb 2022 - Jun 2022</p>
+                    <p>Built robust APIs and UIs using Spring Boot and React, streamlining data workflows.</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Get in Touch</h2>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 24px; margin-top: 16px;">
+                    <a href="mailto:shubhamshukla739860@gmail.com" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
+                        <img src="https://img.icons8.com/ios-filled/50/47ebeb/email.png" alt="Email" style="width: 24px; height: 24px;">
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shubham-shukla-7648581b1/" target="_blank" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
+                        <img src="https://img.icons8.com/ios-filled/50/47ebeb/linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;">
+                        <span>LinkedIn</span>
+                    </a>
+                    
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Shubham Shukla</p>
+        </footer>
+    </div>
+</body>
+
+</html>
