@@ -191,7 +191,7 @@
         color: white;
         padding: 10px;
         font-weight: bold;
-        border-radius: 50%;
+        border-radius:20%;
         width: 80px;
         height: 60px;
         display: flex;
@@ -282,31 +282,37 @@
 
         <main>
 
-            <section id="about">
-                <h1 style="font-size: 2.1em; margin-bottom: 10px; white-space: nowrap; overflow: hidden; border-right: 2px solid #47ebeb; display: inline-block; animation: typing 3s steps(20, end), blink 0.5s step-end infinite;">
-                    Full-Stack Developer
+            <section id="about" style="color: #e0e0e0; font-family: Arial, sans-serif; position: relative; padding: 50px; background-size: cover; background-position: center; background-attachment: fixed;">
+
+                 <!-- Blurred background overlay -->
+                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('https://i.gifer.com/A8kg.gif'); background-size: cover; background-position: right; filter: blur(10px); z-index: -1;"></div>
+            
+                <h1 style="font-size: 2.1em; margin-bottom: 10px; white-space: nowrap; overflow: hidden; border-right: 3px solid #f39c12; display: inline-block; animation: typing 3s steps(30, end), blink 0.5s step-end infinite;">
+                    <span style="color: #00bcd4;">Full-Stack</span> <span style="color: #f39c12;">Developer</span>
                 </h1>
             
                 <div style="display: flex; gap: 20px; align-items: center; margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/18ssXAAAsQhiVIJp1kTFkqp3AfbajaVrQ/view?usp=drive_link" target="_blank" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
                         <img src="https://img.icons8.com/?size=100&id=OExBsk632jtj&format=png&color=000000" alt="Download Resume" style="width: 24px; height: 24px;">
-                        <span style="color: #47ebeb; font-size: 1.1em;">Resume</span>
+                        <span style="color: #ffa500; font-size: 1.1em;">Resume</span>
                     </a>
             
-                    <a href="https://leetcode.com/shubhamshukla739860/" target="_blank" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
+                    <a href="https://leetcode.com/shubhamshukla739860/" target="_blank" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
                         <img src="https://img.icons8.com/?size=100&id=wDGo581Ea5Nf&format=png&color=000000" alt="Leetcode" style="width: 24px; height: 24px;">
-                        <span style="color: #47ebeb; font-size: 1.1em;">Leetcode</span>
+                        <span style="color: #ff6347; font-size: 1.1em;">Leetcode</span>
                     </a>
                 </div>
             
-                <p id="about-text" style="font-size: 1.2em; line-height: 1.6; text-align: justify; margin: 20px auto; max-height: 2.9em; overflow: hidden;">
-                    Hi, I’m Shubham Shukla, a results-driven Full-Stack Developer with over 3 years of experience in designing and developing scalable, high-performance applications. I specialize in leveraging <strong>Java</strong>, <strong>Kotlin</strong>, and <strong>JavaScript</strong> to build robust systems and intuitive user interfaces. I am proficient in frameworks such as <strong>Spring Boot</strong>, <strong>React</strong>, <strong>Vue.js</strong>, and <strong>JAX-RS</strong>, enabling me to deliver seamless backend and frontend solutions. Passionate about clean code and efficient problem-solving, I am committed to delivering innovative solutions that drive business success.
+                <p id="about-text" style="font-size: 1.2em; line-height: 1.6; text-align: justify; margin: 20px auto; max-height: 2.9em; overflow: hidden; color: #dcdcdc;">
+                    Hi, I’m <span style="color: #47ebeb; font-weight: bold;">Shubham Shukla</span>, a results-driven Full-Stack Developer with over 3 years of experience in designing and developing scalable, high-performance applications. I specialize in leveraging <strong style="color: #ff6347;">Java</strong>, <strong style="color: #ffa500;">Kotlin</strong>, and <strong style="color: #87cefa;">JavaScript</strong> to build robust systems and intuitive user interfaces. I am proficient in frameworks such as <strong style="color: #ff6347;">Spring Boot</strong>, <strong style="color: #ffa500;">React</strong>, <strong style="color: #87cefa;">Vue.js</strong>, and <strong style="color: #9370db;">JAX-RS</strong>, enabling me to deliver seamless backend and frontend solutions. Passionate about clean code and efficient problem-solving, I am committed to delivering innovative solutions that drive business success.
                 </p>
-                
-                <button id="read-more-btn" padding: 10px 20px; font-size: 0em; border-radius: 50px; cursor: pointer;>
+            
+                <button id="read-more-btn" style="padding: 5px 10px; font-size: 1em; border-radius: 50px; cursor: pointer; background-color: #47ebeb; color: #000000; border: none; transition: background-color 0.3s;">
                     Read More
                 </button>
             </section>
+            
+                        
             
 
             <section id="skills">
@@ -388,15 +394,14 @@
             </section>
             
 
-            <section id="experience">
-                <h2>Experience</h2>
+            <section id="experience" style="background-color: transparent; color: white; padding: 20px;">
+                <h2 style="color: #00bcd4;">Experience</h2>
                 <div class="timeline">
-                  
                   <div class="timeline-item">
-                    <div class="timeline-date">Jul 2023 - Present</div>
+                    <div class="timeline-date" style="color: #040505;">Jul 2023 - Present</div>
                     <div class="timeline-content">
-                      <h3>Software Development Engineer (Full Stack)</h3>
-                      <p><strong>Capgemini</strong></p>
+                      <h3 style="color: #f39c12;">Software Engineer (Full Stack Developer)</h3>
+                      <p><strong style="color: #3498db;">Capgemini</strong></p>
                       <ul>
                         <li>Developed backend microservices with Kotlin & Spring Boot for 3,000+ users.</li>
                         <li>Improved UX with Vue.js components, reducing load times by 40%.</li>
@@ -408,10 +413,10 @@
                   </div>
               
                   <div class="timeline-item">
-                    <div class="timeline-date">Jul 2022 - Jul 2023</div>
+                    <div class="timeline-date" style="color: #060707;">Jul 2022 - Jul 2023</div>
                     <div class="timeline-content">
-                      <h3>Software Development Engineer (Backend)</h3>
-                      <p><strong>Capgemini</strong></p>
+                      <h3 style="color: #f39c12;">Software Engineer (Backend Developer)</h3>
+                      <p><strong style="color: #3498db;">Capgemini</strong></p>
                       <ul>
                         <li>Built backend microservices with Java & JAX-RS for 2,000+ users.</li>
                         <li>Enhanced app performance with caching strategies, improving speed by 25%.</li>
@@ -422,10 +427,10 @@
                   </div>
               
                   <div class="timeline-item">
-                    <div class="timeline-date">Feb 2022 - Jul 2022</div>
+                    <div class="timeline-date" style="color: #020202;">Feb 2022 - Jul 2022</div>
                     <div class="timeline-content">
-                      <h3>Intern | JEE with Cloud API Development</h3>
-                      <p><strong>Capgemini</strong></p>
+                      <h3 style="color: #f39c12;">Intern | JEE with Cloud API Development</h3>
+                      <p><strong style="color: #3498db;">Capgemini</strong></p>
                       <ul>
                         <li>Developed scalable Java & Spring Boot apps, improving deployment speed by 30%.</li>
                         <li>Enhanced data access efficiency with Spring Boot, Hibernate, and SQL.</li>
